@@ -1,0 +1,78 @@
+@use "../global/definition" as *;
+
+.p-top {
+    background: $color-key-purple-thin2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include mq('sp') {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.p-top-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include mq('sp') {
+        display: block;
+    }
+}
+
+.p-top__left {
+    width: 55%;
+
+    @include mq('sp') {
+        width: 100%;
+        
+    }
+    
+}
+
+.p-top__right {
+    width: 45%;
+
+    @include mq('sp') {
+        width: 100%;
+    }
+}
+
+.p-top__left--title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.3;
+
+    @include mq('tab') {
+        font-size: 36px;
+    }
+
+    @include mq('sp') {
+        font-size: 28px;
+    }
+}
+
+.p-top__left--subtitle {
+    // font-size: 18px;
+    margin-top: 14px;
+}
+
+.p-top__left--buttons {
+    margin-top: 24px;
+}
+
+.p-top__left--button-first {
+    margin-right: 30px;
+}
+
+.p-top__left--buttons-sp {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.p-top__left--button-sp {
+    &:not(:first-child) {
+        margin-top: 28px;
+    }
+}

@@ -1,0 +1,38 @@
+@use "../global/definition" as *;
+
+.c-header__right--lists {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include mq('sp') {
+        display: none;
+    }
+}
+
+.c-header__right--list {
+    font-size: 14px;
+    margin-right: 16px;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease 0s;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 1px;
+        background: $color-base-purple;
+        left: 50%;
+        top: calc(100% + 2px);
+        transform: translateX(-50%);
+        transition: all 0.3s ease 0s;
+        opacity: 0;
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+}

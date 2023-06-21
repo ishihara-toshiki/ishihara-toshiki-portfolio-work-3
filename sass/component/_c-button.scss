@@ -1,0 +1,152 @@
+@use "../global/definition" as *;
+
+//btn-default
+.c-btn-default {
+  display: inline-block;
+  padding: 10px 22px 6px;
+  font-size: 16px;
+  transition: all ease .3s;
+  border-radius: 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+  font-weight: bold;
+
+
+}
+
+//btn-header
+.c-btn-header {
+  background: $color-base-purple;
+  color: $color-base-white;
+  border: 2px solid $color-base-purple;
+
+  @include mq('sp') {
+    width: 88%;
+    text-align: center;
+    padding: 16px 22px 12px;
+    
+  }
+}
+
+//btn-top
+.c-btn-top {
+  background: $color-base-purple;
+  color: $color-base-white;
+  border: 2px solid $color-base-purple;
+  // padding: 14px 24px 10px;
+  font-size: 18px;
+  border-radius: 27px;
+  
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  @include mq('tab') {
+    font-size: 14px;
+    padding: 6px 14px 4px;
+  }
+
+  @include mq('sp') {
+    width: 88%;
+    text-align: center;
+    padding: 16px 22px 12px;
+    
+  }
+}
+
+//btn-top-download
+.c-btn-top-download {
+  background: $color-base-white;
+  color: $color-base-purple;
+  border: 2px solid $color-base-purple;
+  // padding: 14px 24px 10px;
+  font-size: 18px;
+  border-radius: 27px;
+
+  
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  @include mq('tab') {
+    font-size: 14px;
+    padding: 6px 14px 4px;
+  }
+
+  @include mq('sp') {
+    width: 88%;
+    text-align: center;
+    padding: 16px 22px 12px;
+    
+  }
+}
+
+//btn-action
+.c-btn-action {
+  background: $color-base-purple;
+  color: $color-base-white;
+  border: 2px solid $color-base-purple;
+  padding: 10px 30px 6px;
+  border-radius: 50px;
+  font-size: 22px;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  @include mq('sp') {
+    font-size: 18px;
+    width: 88%;
+    text-align: center;
+    padding: 16px 22px 12px;
+  }
+}
+
+//btn-price-light
+.c-btn-price-light {
+  background: $color-base-white;
+  color: $color-base-black;
+  border: 2px solid $color-base-black;
+
+  // @include mq('sp') {
+  //   border-radius: 21px;
+  // }
+  
+}
+
+.c-btn-price-light-in {
+  &:hover {
+    background: $color-base-black;
+    color: $color-base-white;
+    border: 2px solid $color-base-white;
+  }
+}
+
+//btn-price-basic
+.c-btn-price-basic {
+  background: $color-base-purple;
+  color: $color-base-white;
+  border: 2px solid $color-base-white;
+}
+
+.c-btn-price-basic-in {
+  &:hover {
+    background: $color-base-white;
+    color: $color-base-purple;
+    border: 2px solid $color-base-purple;
+  }
+}
+
+//btn-price-premium
+.c-btn-price-premium {
+  background: $color-base-white;
+  color: $color-base-black;
+  border: 2px solid $color-base-black;
+}
+
+.c-btn-price-premium-in {
+  &:hover {
+    background: $color-base-black;
+    color: $color-base-white;
+    border: 2px solid $color-base-white;
+  }
+}

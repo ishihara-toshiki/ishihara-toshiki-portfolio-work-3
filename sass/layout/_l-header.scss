@@ -1,0 +1,32 @@
+@use "../global/definition" as *;
+
+.l-header {
+    background: $color-base-white;
+}
+
+.l-header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+
+    @include mq('sp') {
+        height: 60px;
+    }
+}
+
+.l-header__left {
+    margin-right: auto;
+
+    img {
+        height: 30px;
+        width: auto;
+
+        @include mq('sp') {
+            height: 24px;
+        }
+    }
+}
+
+
+

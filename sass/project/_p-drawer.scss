@@ -1,0 +1,118 @@
+@use "../global/definition" as *;
+
+.p-drawer {
+    @include mq('pc') {
+        display: none;
+    }
+
+    @include mq('tab') {
+        display: none;
+    }
+}
+
+//コピペ
+
+.p-drawer-nav {
+    top: 60px;
+    background: $color-key-purple-thin2;
+    width: 100%;
+    z-index: 100;
+}
+
+.drawer--right.drawer-open .drawer-hamburger {
+    right: 0;
+}
+
+.drawer--right .drawer-nav {
+    right: 100%;
+}
+
+.drawer-hamburger {
+    position: static;
+    width: auto;
+}
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:after,
+.drawer-hamburger-icon:before {
+    background: $color-base-purple;
+    height: 3px;
+    width: 26px;
+    border-radius: 3px;
+}
+
+.drawer-hamburger-icon {
+    width: 16px;
+    transform: translate(50%, 4px);
+
+}
+
+.drawer-hamburger-icon:after {
+    top: 7px;
+    transform: translateX(-36%);
+}
+
+.drawer-hamburger-icon:before {
+    top: -7px;
+    transform: translateX(-36%);
+}
+
+.drawer-open {
+    overflow: visible!important;
+}
+
+.drawer-overlay {
+    background-color: transparent;
+}
+
+.p-drawer-menu {
+    margin-top: 50px;
+
+    li {
+        padding-left: 90px;
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+
+        &:first-child {
+            margin-top: 0px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "□";
+            left: 54px;
+            top: 0;
+            transform: rotate(45deg);
+            font-weight: bold;
+            color: $color-base-purple;
+        }
+    }
+
+}
+
+.p-drawer-menu__item--buttons {
+    margin-top: 30px;
+}
+
+.p-drawer-menu__item--button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.drawer-hamburger-text {
+    font-size: 5px;
+    color: $color-base-purple;
+    font-weight: bold;
+    position: absolute;
+    left: 9px;
+    top: 7px;
+    transition: all 0.3s ease 0s;
+}
+
+.drawer-open {
+    .drawer-hamburger-text {
+        display: none;
+    }
+}

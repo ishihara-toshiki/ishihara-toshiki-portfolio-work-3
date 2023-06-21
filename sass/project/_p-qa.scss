@@ -1,0 +1,65 @@
+@use "../global/definition" as *;
+
+.p-qa {
+    background: #F9F9F9;
+}
+
+.p-qa__wrapper {
+    width: 100%;
+    max-width: 920px;
+    margin: 40px auto 0;
+}
+
+.p-qa-item {
+    margin-top: 24px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.p-qa-item__head {
+    padding: 16px 20px 16px 56px;
+    color: $color-base-white;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    background: $color-base-purple;
+    border-radius: 10px;
+
+    &::before {
+        content: 'Q';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 23px;
+        color: $color-base-white;
+        font-size: 22px;
+
+
+    }
+
+
+}
+
+.p-qa-item__body {
+    padding: 16px 20px 16px 56px;
+    background: $color-base-white;
+    font-size: 18px;
+    font-weight: normal;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none;
+
+    &::before {
+        content: 'A';
+        position: absolute;
+        top: 30px;
+        transform: translateY(-50%);
+        left: 23px;
+        font-weight: bold;
+        font-size: 22px;
+    }
+}

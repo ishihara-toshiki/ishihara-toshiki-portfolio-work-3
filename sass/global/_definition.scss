@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+// 色
+$color-text-black: #1A1A1A;
+$color-text-white: #FFFFFF;
+$color-main: #023E78;
+$color-main-deep: #002A52;
+$color-main-thin: #EEF3F8;
+$color-accent-ylellow: #FEF251;
+$color-accent-pink: #D33365;
+$color-bg: #FFFFFF;
+$color-btn-main: #023E78;
+
+$color-base-black: #2D2D32;
+$color-base-white: #FFFFFF;
+$color-base-purple: #64629D;
+$color-key-purple-thin1: #9F9EC1;
+$color-key-purple-thin2: #EDECFC;
+$color-footer-bg: #000000;
+$color-footer-text: #FFFFFF;
+
+// 幅
+$layout-width-inner: 1100px;
+
+
+
+// ブレークポイント
+$breakpoints: (
+ "sp": "(max-width: 767px)", 
+ "tab": "(min-width: 768px) and (max-width: #{$layout-width-inner - 1px})",
+ "pc": "(min-width: #{$layout-width-inner})",
+);
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

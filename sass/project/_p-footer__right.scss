@@ -1,0 +1,30 @@
+@use "../global/definition" as *;
+
+.p-footer__right {
+    color: $color-text-white;
+}
+
+.p-footer__right--text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p-footer__right--lists {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
+
+    @include mq('sp') {
+        justify-content: center;
+    }
+}
+
+.p-footer__right--list {
+    margin-right: 18px;
+
+    @include mq('sp') {
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

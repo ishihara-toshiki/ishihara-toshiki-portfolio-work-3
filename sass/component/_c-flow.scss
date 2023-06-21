@@ -1,0 +1,45 @@
+@use "../global/definition" as *;
+
+.c-flow__img {
+    position: relative;
+    // overflow: hidden;
+    border-radius: 30px;
+    background: $color-key-purple-thin2;
+    padding: 24px 40px;
+}
+
+.c-flow__number {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    transform: translateY(-30%);
+    color: $color-base-purple; 
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+
+    @include mq('sp') {
+        left: 0;
+        top: -10px;
+    }
+}
+
+.c-flow__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+
+    @include mq('sp') {
+        font-size: 20px;
+        margin-top: 16px;
+    }
+}
+
+.c-flow__explain {
+    margin-top: 6px;
+
+    @include mq('sp') {
+        margin-top: 2px;
+    }
+}

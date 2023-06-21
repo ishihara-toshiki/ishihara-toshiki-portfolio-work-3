@@ -1,0 +1,22 @@
+@use "../global/definition" as *;
+
+.p-about__explain {
+    text-align: center;
+}
+
+.p-about__explain {
+    margin-top: 8px;
+}
+
+.p-about__explain--detail {
+    margin-top: 30px;
+}
+
+.p-about__button {
+    margin-top: 36px;
+    text-align: center;
+
+    @include mq('sp') {
+        margin-top: 24px;
+    }
+}

@@ -1,0 +1,43 @@
+@use "../global/definition" as *;
+
+.p-footer__left {
+    color: $color-text-white;
+
+    @include mq('sp') {
+        margin-top: 32px;
+    }
+}
+
+.p-footer__left--logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.p-footer__left--lists {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
+
+    @include mq('sp') {
+        display: block;
+    }
+}
+
+.p-footer__left--list {
+    margin-right: 14px;
+
+    @include mq('sp') {
+        margin-right: 0;
+        margin-top: 6px;
+    }
+}
+
+.p-footer__left--copyright {
+    margin-top: 8px;
+    font-size: 10px;
+
+    @include mq('sp') {
+        margin-top: 24px;
+    }
+}

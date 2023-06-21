@@ -1,0 +1,62 @@
+@use "../global/definition" as *;
+
+.p-flow {
+    background: #F9F9F9;
+}
+
+.p-flow__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    @include mq('sp') {
+        display: block;
+        margin-top: 38px;
+    }
+}
+
+.p-flow__flow {
+    width: calc(33.3% - 114px * 2 / 3);
+    position: relative;
+
+    @include mq('pc') {
+        &:not(:nth-child(5n + 1)) {
+            margin-left: 114px;
+        }
+    
+        &:nth-child(n + 6) {
+            margin-top: 50px;
+        }
+    }
+
+
+    @include mq('tab') {
+        &:not(:nth-child(5n + 1)) {
+            margin-left: 114px;
+        }
+    
+        &:nth-child(n + 6) {
+            margin-top: 50px;
+        }
+    }
+
+    @include mq('sp') {
+        width: 100%;
+    
+        &:nth-child(n + 2) {
+            margin-top: 68px;
+        }
+    }
+}
+
+.p-flow__flow--next {
+    position: absolute;
+    left: calc(100% + 60px);
+    top: 100px;
+    transform: translate(-50%, -50%);
+
+    img {
+        width: 29px;
+        height: 64px;
+    }
+}

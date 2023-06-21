@@ -1,0 +1,99 @@
+@use "../global/definition" as *;
+
+.c-feature-even {
+    position: relative;
+}
+
+.c-feature-even__right {
+    background: $color-base-white;
+    padding: 60px 20px 60px 110px;
+    border-radius: 30px;
+    max-width: 650px;
+    margin-left: auto;
+
+    @include mq('tab') {
+        padding: 100px 20px 60px 20px;
+        max-width: 100%;
+    }
+
+    @include mq('sp') {
+        padding: 100px 20px 60px 20px;
+        max-width: 100%;
+    }
+}
+
+.c-feature-even__right--title {
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    line-height: 1.4;
+
+    @include mq('sp') {
+        font-size: 22px;
+    }
+}
+
+.c-feature-even__right--title-before {
+    position: absolute;
+    left: -80px;
+    top: 0;
+    color: $color-base-purple;
+    font-size: 64px;
+    line-height: 1;
+
+    @include mq('tab') {
+        left: 0;
+        top: -50px;
+        font-size: 54px;
+    }
+
+    @include mq('sp') {
+        left: 0;
+        top: -50px;
+        font-size: 48px;
+    }
+}
+
+.c-feature-even__right--explain {
+    margin-top: 16px;
+    padding-right: 60px;
+
+    @include mq('sp') {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+.c-feature-even__left {
+    position: absolute;
+    left: 0;
+    top: 25px;
+
+    img {
+        @include mq('tab') {
+            max-width: 420px;
+            max-height: 420px;
+        }
+
+        @include mq('sp') {
+            width: 310px;
+            height: 310px;
+        }
+    }
+
+    @include mq('tab') {
+        bottom: 72%;
+        top: auto;
+        right: 50%;
+        transform: translateX(50%);
+        left: auto;
+    }
+
+    @include mq('sp') {
+        bottom: 72%;
+        top: auto;
+        right: 50%;
+        transform: translateX(50%);
+        left: auto;
+    }
+}

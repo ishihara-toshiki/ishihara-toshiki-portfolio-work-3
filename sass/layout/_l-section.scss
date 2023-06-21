@@ -1,0 +1,11 @@
+@use "../global/definition" as *;
+
+.l-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @include mq('sp') {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}

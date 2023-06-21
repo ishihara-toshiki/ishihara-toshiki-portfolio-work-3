@@ -1,0 +1,31 @@
+@use "../global/definition" as *;
+
+.l-footer {
+    background: $color-footer-bg;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include mq('sp') {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.l-footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include mq('sp') {
+        display: block;
+    }
+}
+
+.l-footer__left {
+    margin-right: auto;
+
+    @include mq('sp') {
+        margin-right: 0;
+    }
+}
